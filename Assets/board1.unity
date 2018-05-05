@@ -430,7 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.95862055, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.2, b: 0.2, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -646,6 +646,16 @@ Prefab:
       propertyPath: movementFactor
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 23147092138165726, guid: 227ed72e362ed264bb740438922a9dd9,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 34b8c98ef282bc34ab75c7d1e6ff0dac, type: 2}
+    - target: {fileID: 23577656402041116, guid: 227ed72e362ed264bb740438922a9dd9,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 684679b9d48c8ef40b0f0d55c0fd463e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 227ed72e362ed264bb740438922a9dd9, type: 2}
   m_IsPrefabParent: 0
@@ -1028,7 +1038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.4, g: 0.2, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1336,8 +1346,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1025340742937764, guid: 57f5c28f763a5864e9f8fc08853f01ed, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23223549478848420, guid: 57f5c28f763a5864e9f8fc08853f01ed,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c27c3927b0249745a4288314ee83a9e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 57f5c28f763a5864e9f8fc08853f01ed, type: 2}
   m_IsPrefabParent: 0
