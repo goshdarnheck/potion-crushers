@@ -1,18 +1,18 @@
 fileFormatVersion: 2
-guid: 3c2e68b3b018e3d4cad5a2a7c1b5ae84
-timeCreated: 1525542747
+guid: 5acb3ae41d6757b43ba458f8679167b0
+timeCreated: 1525548931
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Terrain_Base_Quarter_1
+    100002: Terrain_Base_Quarter_1_v2
     400000: //RootNode
-    400002: Terrain_Base_Quarter_1
-    2100000: Terrain_Base_Quarter_1Mat
-    2300000: Terrain_Base_Quarter_1
-    3300000: Terrain_Base_Quarter_1
-    4300000: Terrain_Base_Quarter_1
+    400002: Terrain_Base_Quarter_1_v2
+    2100000: Terrain_Base_Quarter_1_v2Mat
+    2300000: Terrain_Base_Quarter_1_v2
+    3300000: Terrain_Base_Quarter_1_v2
+    4300000: Terrain_Base_Quarter_1_v2
   externalObjects: {}
   materials:
     importMaterials: 1
