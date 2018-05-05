@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potion: {fileID: 1603516365235632, guid: f34a0840abefd1f43ae6cc30ac2cc82e, type: 2}
-  remaining: 95
+  remaining: 55
   rate: 1
   scoreValue: 1
   delay: 0
@@ -1035,7 +1035,7 @@ Prefab:
     - target: {fileID: 114314932831934768, guid: 3ff7c8c30db153f4c9229daeed1dc20b,
         type: 2}
       propertyPath: remaining
-      value: 95
+      value: 55
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ff7c8c30db153f4c9229daeed1dc20b, type: 2}
@@ -1307,7 +1307,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.9878296, g: 0.9117647, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30

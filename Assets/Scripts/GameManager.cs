@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-	[SerializeField] float timeLeft = 100f;
+	[SerializeField] float timeLeft = 60f;
 	int player1Score = 0;
 	int player2Score = 0;
 
