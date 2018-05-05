@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
 
-	[Tooltip("hi")] [SerializeField] float movementFactor = 10f;
-	[SerializeField] float movementLimiter = 10f;
+	[Tooltip("How fast the player can move")] [SerializeField] float movementFactor = 10f;
+	[Tooltip("How far the player can move from origin")] [SerializeField] float movementLimiter = 10f;
 
 	bool isControlEnabled = true;
 
@@ -31,5 +31,9 @@ public class Player : MonoBehaviour {
 		// float jumped = CrossPlatformInputManager.GetAxis("Jump");
 
 		transform.localPosition = new Vector3(clampedXPos, transform.localPosition.y, clampedZPos);
+
+		if (xThrow != 0 || zThrow != 0) {
+			transform.forward = Vector3.Normalize(new Vector3(xThrow, 0f, zThrow));
+		}
 	}
 }
