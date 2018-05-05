@@ -19,8 +19,11 @@ public class PlayerCollider : MonoBehaviour {
             if (potion.hasHadABitOfATouch() == false) {
                 potion.touch();
                 Destroy(other.gameObject);
-                scoreBoard.SetPlayer1score(gameManager.increasePlayer1Score());
+                scoreBoard.SetPlayer1score(gameManager.updatePlayer1Score(1));
             }
+        } else if (other.gameObject.tag == "Enemy") {
+            Destroy(other.gameObject);
+            scoreBoard.SetPlayer1score(gameManager.updatePlayer1Score(-1));
         }
     }
 }
