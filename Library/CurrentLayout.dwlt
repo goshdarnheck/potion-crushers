@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 52
+  controlID: 9
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 53
+  controlID: 10
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 54
+  controlID: 11
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -355,19 +355,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Materials
+    - Assets/Voxels/Wizard2
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials
+  - Assets/Voxels/Wizard2
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Matt\Repos\Unity\Flirteen
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 38280000
-    m_LastClickedID: 10296
-    m_ExpandedIDs: 000000009627000046f7000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 23}
+    m_SelectedIDs: aa2b0000
+    m_LastClickedID: 11178
+    m_ExpandedIDs: 000000009e270000bc280000a82b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -395,7 +395,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000096270000
+    m_ExpandedIDs: 000000009e270000bc280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -513,20 +513,20 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 04290000
-    m_LastClickedID: 10500
-    m_ExpandedIDs: a85ff9ffdc82fbffc2fbfdffe210feff98d4ffff9efbffff00000000dc280000002900000e290000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 6054ffffb855ffffeec9ffff0afbffff38fbffff9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Tojam Goat
-      m_OriginalName: Tojam Goat
+      m_Name: Wizard 2 hat
+      m_OriginalName: Wizard 2 hat
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -434264
+      m_UserData: -43936
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -566,14 +566,14 @@ MonoBehaviour:
     height: 651
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 12674.830410365437
+  lastFramingTime: 1016.2521189268432
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -14.02361, y: 13.375751, z: -22.66492}
+    m_Target: {x: 1.9583926, y: 8.401118, z: -10.235287}
     speed: 2
-    m_Value: {x: -14.02361, y: 13.375751, z: -22.66492}
+    m_Value: {x: 1.9583926, y: 8.401118, z: -10.235287}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -597,13 +597,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.32706767, y: -0.024948968, z: 0.008638085, w: -0.9446321}
+    m_Target: {x: -0.22117434, y: -0.13785438, z: 0.031598147, w: -0.96492475}
     speed: 2
-    m_Value: {x: -0.32706767, y: -0.024948968, z: 0.008638085, w: -0.9446321}
+    m_Value: {x: -0.22117434, y: -0.13785438, z: 0.031598147, w: -0.96492475}
   m_Size:
-    m_Target: 5.3715787
+    m_Target: 2.8578837
     speed: 2
-    m_Value: 5.3715787
+    m_Value: 2.8578837
   m_Ortho:
     m_Target: 0
     speed: 2
