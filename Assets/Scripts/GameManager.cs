@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -16,10 +17,15 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 		timeLeft -= Time.deltaTime;
 		scoreBoard.SetTimerTime(timeLeft);
+
+		if (timeLeft <= 0) {
+			SceneManager.LoadScene(0);
+		}
 	}
 
 	public int increasePlayer1Score() {
 		player1Score++;
+
 		return player1Score;
 	}
 }

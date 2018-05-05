@@ -13,7 +13,13 @@ public class PlayerCollider : MonoBehaviour {
     }
 
 	private void OnTriggerEnter(Collider other) {
-		Destroy(other.gameObject);
-		scoreBoard.SetPlayer1score(gameManager.increasePlayer1Score());
+        if (other.gameObject.tag == "Potion") {
+            var thing = other.gameObject.GetComponent<Potion>();
+            if (thing.hasHadABitOfATouch() == false) {
+                thing.touch();
+                Destroy(other.gameObject);
+                scoreBoard.SetPlayer1score(gameManager.increasePlayer1Score());
+            }
+        }
     }
 }
