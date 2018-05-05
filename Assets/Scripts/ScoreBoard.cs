@@ -7,7 +7,6 @@ public class ScoreBoard : MonoBehaviour {
 
     [SerializeField] Text player1ScoreText;
     [SerializeField] Text timerText;
-    
 
 	void Start() {
         player1ScoreText.text = "0";
@@ -17,7 +16,7 @@ public class ScoreBoard : MonoBehaviour {
         player1ScoreText.text = score.ToString();
     }
 
-    public void SetTimerTime(int seconds) {
-        timerText.text = seconds.ToString();
+    public void SetTimerTime(float seconds) {
+        timerText.text = Mathf.Round(seconds).ToString();
     }
 }

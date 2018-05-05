@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour {
 		float clampedXPos = Mathf.Clamp(transform.localPosition.x + xOffset, -Mathf.Abs(movementLimiter), movementLimiter);
 		float zOffset = zThrow * movementFactor * Time.deltaTime;
         float clampedZPos = Mathf.Clamp(transform.localPosition.z + zOffset, -Mathf.Abs(movementLimiter), movementLimiter);
-		// float jumped = CrossPlatformInputManager.GetAxis("Jump");
 
 		transform.localPosition = new Vector3(clampedXPos, transform.localPosition.y, clampedZPos);
 
