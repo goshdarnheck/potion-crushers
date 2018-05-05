@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCollider : MonoBehaviour {
+public class PlayerCollider2 : MonoBehaviour {
 
     ScoreBoard scoreBoard;
     GameManager gameManager;
@@ -19,7 +19,7 @@ public class PlayerCollider : MonoBehaviour {
             if (potion.hasHadABitOfATouch() == false) {
                 potion.touch();
                 Destroy(other.gameObject);
-                scoreBoard.SetPlayer1score(gameManager.increasePlayer1Score());
+                scoreBoard.SetPlayer2score(gameManager.increasePlayer2Score());
             }
         }
     }

@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
 
 	[SerializeField] float timeLeft = 10f;
 	int player1Score = 0;
+	int player2Score = 0;
 
 	ScoreBoard scoreBoard;
 
@@ -27,5 +28,11 @@ public class GameManager : MonoBehaviour {
 		player1Score++;
 
 		return player1Score;
+	}
+
+	public int increasePlayer2Score() {
+		player2Score++;
+
+		return player2Score;
 	}
 }
