@@ -80,10 +80,14 @@ public class GameManager : MonoBehaviour {
 			print("player 1 won");
 			winnerIndex = 1;
 			winnerTransform = playerController.transform;
+			var winnerText = scoreBoard.transform.Find("Winner1");
+			winnerText.gameObject.SetActive(true);
 		} else if (player2Score > player1Score) {
 			print("player 2 won");
 			winnerTransform = playerController2.transform;
 			winnerIndex = 2;
+			var winnerText = scoreBoard.transform.Find("Winner2");
+			winnerText.gameObject.SetActive(true);
 		}
 	}
 
