@@ -11,10 +11,6 @@ public class PlayerController2 : MonoBehaviour {
 
 	bool isControlEnabled = true;
 
-	void Start () {
-		
-	}
-	
 	void Update () {
 		if (isControlEnabled) {
             ProcessInput();
