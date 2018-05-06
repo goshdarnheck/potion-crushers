@@ -20,12 +20,16 @@ public class PotionEmitter : MonoBehaviour {
         yield return new WaitForSeconds(delay);
 
         while (remaining > 0) {
-			Vector3 randoSpot = new Vector3(Random.Range(-Mathf.Abs(range), range), 1.2f, Random.Range(-Mathf.Abs(range), range));
-            GameObject potionInstance = Instantiate(potion, randoSpot, Quaternion.identity);
-            Potion potionThing = potionInstance.GetComponent<Potion>();
-            potionThing.hp = hp;
+            var potions = FindObjectsOfType<Potion>();
+            
+            if (potions.Length < 30) {
+                Vector3 randoSpot = new Vector3(Random.Range(-Mathf.Abs(range), range), 1.2f, Random.Range(-Mathf.Abs(range), range));
+                GameObject potionInstance = Instantiate(potion, randoSpot, Quaternion.identity);
+                Potion potionThing = potionInstance.GetComponent<Potion>();
+                potionThing.hp = hp;
 
-            remaining--;
+                remaining--;
+            }
 
             yield return new WaitForSeconds(rate);
         }

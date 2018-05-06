@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour {
         }
 	}
 
+	public void disableControls() {
+		isControlEnabled = false;
+	}
+
 	void ProcessInput () {
 		float xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
 		float zThrow = CrossPlatformInputManager.GetAxis("Vertical");

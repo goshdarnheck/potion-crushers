@@ -20,12 +20,16 @@ public class EnemyEmitter : MonoBehaviour {
         yield return new WaitForSeconds(delay);
 
         while (remaining > 0) {
-			Vector3 randoSpot = new Vector3(Random.Range(-Mathf.Abs(range), range), 2f, Random.Range(-Mathf.Abs(range), range));
-            GameObject enemyInstance = Instantiate(enemy, randoSpot, Quaternion.identity);
-            Enemy enemyComponent = enemyInstance.GetComponent<Enemy>();
-            enemyComponent.hp = hp;
+            var enemies = FindObjectsOfType<Enemy>();
 
-            remaining--;
+            if (enemies.Length < 30) {
+                Vector3 randoSpot = new Vector3(Random.Range(-Mathf.Abs(range), range), 2f, Random.Range(-Mathf.Abs(range), range));
+                GameObject enemyInstance = Instantiate(enemy, randoSpot, Quaternion.identity);
+                Enemy enemyComponent = enemyInstance.GetComponent<Enemy>();
+                enemyComponent.hp = hp;
+
+                remaining--;
+            }
 
             yield return new WaitForSeconds(rate);
         }
