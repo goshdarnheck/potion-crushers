@@ -24,7 +24,8 @@ public class Enemy : MonoBehaviour {
 		findNewTarget();
 
         if (target != null) {
-            transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+			Vector3 thing = new Vector3(target.position.x, transform.position.y, target.position.z);
+            transform.position = Vector3.MoveTowards(transform.position, thing, step);
         }
 	}
 
@@ -35,4 +36,12 @@ public class Enemy : MonoBehaviour {
 			target = playerController2.transform;
 		}
 	}
+
+	private void OnParticleCollision(GameObject other) {
+		if (other.tag == "Magic") {
+			print(other);
+		}
+
+		Destroy(gameObject);
+    }
 }

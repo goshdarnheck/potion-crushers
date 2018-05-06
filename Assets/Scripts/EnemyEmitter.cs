@@ -21,7 +21,7 @@ public class EnemyEmitter : MonoBehaviour {
         while (remaining > 0) {
 			Vector3 randoSpot = new Vector3(Random.Range(-Mathf.Abs(range), range), 2f, Random.Range(-Mathf.Abs(range), range));
             GameObject enemyInstance = Instantiate(enemy, randoSpot, Quaternion.identity);
-            Enemy enemyComponent = enemyInstance.GetComponent<Enemy>();
+            // Enemy enemyComponent = enemyInstance.GetComponent<Enemy>();
             // enemyComponent.scoreValue = scoreValue;
 
             remaining--;

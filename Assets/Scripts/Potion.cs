@@ -13,4 +13,11 @@ public class Potion : MonoBehaviour {
     public bool hasHadABitOfATouch() {
         return isTouched;
     }
+
+    private void OnParticleCollision(GameObject other) {
+		if (other.tag == "Magic") {
+			print(other);
+            Destroy(gameObject);
+		}
+    }
 }
