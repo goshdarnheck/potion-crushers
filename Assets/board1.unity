@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e590bea81283d43b1bb2e5f45e0084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 5
+  timeLeft: 30
   winnersCircle: {fileID: 1669455198}
 --- !u!4 &85859272
 Transform:
@@ -7795,6 +7795,22 @@ Prefab:
       propertyPath: ColorModule.gradient.maxGradient.key1.g
       value: 0.5019608
       objectReference: {fileID: 0}
+    - target: {fileID: 4417257304267418, guid: 0f70cc96120ba1146814a67ca1194a96, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574411341644398, guid: 0f70cc96120ba1146814a67ca1194a96, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180368650545744, guid: 0f70cc96120ba1146814a67ca1194a96, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4641030766662776, guid: 0f70cc96120ba1146814a67ca1194a96, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f70cc96120ba1146814a67ca1194a96, type: 2}
   m_IsPrefabParent: 0
@@ -11587,6 +11603,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &557289290
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4634030735215544, guid: ac3b6703b5805ac43ae0c8d8e5cb0ea4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634030735215544, guid: ac3b6703b5805ac43ae0c8d8e5cb0ea4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634030735215544, guid: ac3b6703b5805ac43ae0c8d8e5cb0ea4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634030735215544, guid: ac3b6703b5805ac43ae0c8d8e5cb0ea4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634030735215544, guid: ac3b6703b5805ac43ae0c8d8e5cb0ea4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634030735215544, guid: ac3b6703b5805ac43ae0c8d8e5cb0ea4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634030735215544, guid: ac3b6703b5805ac43ae0c8d8e5cb0ea4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634030735215544, guid: ac3b6703b5805ac43ae0c8d8e5cb0ea4, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ac3b6703b5805ac43ae0c8d8e5cb0ea4, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &558842546 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: af4f561e5e4962446a82ee5c812819cb, type: 3}
@@ -12378,6 +12436,27 @@ Prefab:
         type: 2}
       propertyPath: ColorModule.gradient.maxGradient.key1.b
       value: 0.43137258
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024016728557148, guid: 227ed72e362ed264bb740438922a9dd9, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4320287083285368, guid: 227ed72e362ed264bb740438922a9dd9, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046617903377218, guid: 227ed72e362ed264bb740438922a9dd9, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207843353993432, guid: 227ed72e362ed264bb740438922a9dd9, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114348266622708420, guid: 227ed72e362ed264bb740438922a9dd9,
+        type: 2}
+      propertyPath: potionPickupFX
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 227ed72e362ed264bb740438922a9dd9, type: 2}

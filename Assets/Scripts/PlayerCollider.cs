@@ -7,9 +7,12 @@ public class PlayerCollider : MonoBehaviour {
     ScoreBoard scoreBoard;
     GameManager gameManager;
 
+    GameObject potionPickupFX;
+
     void Start () {
         scoreBoard = FindObjectOfType<ScoreBoard>();
         gameManager = FindObjectOfType<GameManager>();
+        potionPickupFX = Resources.Load("PotionPickup") as GameObject;
     }
 
 	private void OnTriggerEnter(Collider other) {
@@ -18,6 +21,11 @@ public class PlayerCollider : MonoBehaviour {
             
             if (potion.hasHadABitOfATouch() == false) {
                 potion.touch();
+                
+                GameObject fx = Instantiate(potionPickupFX, transform.position, Quaternion.identity);
+                fx.transform.parent = transform;
+                Destroy(fx, 1f);
+                
                 Destroy(other.gameObject);
                 scoreBoard.SetPlayer1score(gameManager.updatePlayer1Score(1));
             }
