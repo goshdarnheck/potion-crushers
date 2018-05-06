@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class GameManager : MonoBehaviour {
 
@@ -16,13 +17,15 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	void Update () {
+		float cancelRaw = CrossPlatformInputManager.GetAxisRaw("Cancel");
+
 		if (player1Score != player2Score) {
 			timeLeft -= Time.deltaTime;
 		}
 
 		scoreBoard.SetTimerTime(timeLeft);
 
-		if (timeLeft <= 0) {
+		if (timeLeft <= 0 || cancelRaw == 1) {
 			SceneManager.LoadScene(0);
 		}
 	}
