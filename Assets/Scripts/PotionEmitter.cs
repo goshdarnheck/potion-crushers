@@ -10,6 +10,7 @@ public class PotionEmitter : MonoBehaviour {
     [SerializeField] int scoreValue = 1;
     [SerializeField] float delay = 0f;
 	[SerializeField] float range = 35f;
+    [SerializeField] int hp = 10;
 
 	void Start () {
 		StartCoroutine(EmitPotions());
@@ -22,7 +23,7 @@ public class PotionEmitter : MonoBehaviour {
 			Vector3 randoSpot = new Vector3(Random.Range(-Mathf.Abs(range), range), 1.2f, Random.Range(-Mathf.Abs(range), range));
             GameObject potionInstance = Instantiate(potion, randoSpot, Quaternion.identity);
             Potion potionThing = potionInstance.GetComponent<Potion>();
-            potionThing.scoreValue = scoreValue;
+            potionThing.hp = hp;
 
             remaining--;
 

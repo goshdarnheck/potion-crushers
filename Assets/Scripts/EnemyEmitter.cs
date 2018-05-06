@@ -10,6 +10,7 @@ public class EnemyEmitter : MonoBehaviour {
     [SerializeField] int scoreValue = 1;
     [SerializeField] float delay = 0f;
 	[SerializeField] float range = 35f;
+	[SerializeField] int hp = 2;
 
 	void Start () {
 		StartCoroutine(EmitEnemies());
@@ -21,8 +22,8 @@ public class EnemyEmitter : MonoBehaviour {
         while (remaining > 0) {
 			Vector3 randoSpot = new Vector3(Random.Range(-Mathf.Abs(range), range), 2f, Random.Range(-Mathf.Abs(range), range));
             GameObject enemyInstance = Instantiate(enemy, randoSpot, Quaternion.identity);
-            // Enemy enemyComponent = enemyInstance.GetComponent<Enemy>();
-            // enemyComponent.scoreValue = scoreValue;
+            Enemy enemyComponent = enemyInstance.GetComponent<Enemy>();
+            enemyComponent.hp = hp;
 
             remaining--;
 

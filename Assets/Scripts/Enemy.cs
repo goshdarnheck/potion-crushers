@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour {
 	PlayerController playerController;
 	PlayerController2 playerController2;
 	GameManager gameManager;
+	public int hp = 2;
 
 	// Use this for initialization
 	void Start () {
@@ -43,7 +44,11 @@ public class Enemy : MonoBehaviour {
 
 	private void OnParticleCollision(GameObject other) {
 		if (other.tag == "Magic") {
-			Destroy(gameObject);
+			hp--;
+
+			if (hp <= 0) {
+				Destroy(gameObject);
+			}
 		}
     }
 }

@@ -411,10 +411,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potion: {fileID: 1603516365235632, guid: f34a0840abefd1f43ae6cc30ac2cc82e, type: 2}
   remaining: 55
-  rate: 1
+  rate: 0.5
   scoreValue: 1
   delay: 0
   range: 35
+  hp: 5
 --- !u!4 &500137271 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4766156490089086, guid: 499425c6f9d459040b3eef67bdbe7373,
@@ -1163,6 +1164,11 @@ Prefab:
         type: 2}
       propertyPath: remaining
       value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 114314932831934768, guid: 3ff7c8c30db153f4c9229daeed1dc20b,
+        type: 2}
+      propertyPath: hp
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ff7c8c30db153f4c9229daeed1dc20b, type: 2}
