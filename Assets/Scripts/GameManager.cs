@@ -16,7 +16,10 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	void Update () {
-		timeLeft -= Time.deltaTime;
+		if (player1Score != player2Score) {
+			timeLeft -= Time.deltaTime;
+		}
+
 		scoreBoard.SetTimerTime(timeLeft);
 
 		if (timeLeft <= 0) {
