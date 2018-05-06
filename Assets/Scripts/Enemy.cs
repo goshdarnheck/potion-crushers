@@ -30,18 +30,20 @@ public class Enemy : MonoBehaviour {
 	}
 
 	void findNewTarget() {
-		if (gameManager.getWinningPlayer() == 1) {
+		int winningPlayerIndex = gameManager.getWinningPlayer();
+		
+		if (winningPlayerIndex == 1) {
 			target = playerController.transform;
-		} else {
+		} else if (winningPlayerIndex == 2) {
 			target = playerController2.transform;
+		} else {
+			target = null;
 		}
 	}
 
 	private void OnParticleCollision(GameObject other) {
 		if (other.tag == "Magic") {
-			print(other);
+			Destroy(gameObject);
 		}
-
-		Destroy(gameObject);
     }
 }

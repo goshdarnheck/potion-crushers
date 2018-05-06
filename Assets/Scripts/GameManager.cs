@@ -37,6 +37,12 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public int getWinningPlayer() {
-		return player1Score >= player2Score ? 1 : 2;
+		if (player1Score == player2Score) {
+			return 0;
+		} else if (player1Score > player2Score) {
+			return 1;
+		} else {
+			return 2;
+		}
 	}
 }

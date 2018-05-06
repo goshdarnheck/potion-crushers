@@ -16,7 +16,6 @@ public class Potion : MonoBehaviour {
 
     private void OnParticleCollision(GameObject other) {
 		if (other.tag == "Magic") {
-			print(other);
             Destroy(gameObject);
 		}
     }
