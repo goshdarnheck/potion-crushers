@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour {
 	PlayerController playerController;
 	PlayerController2 playerController2;
 	GameManager gameManager;
+	GameObject skullKillFX;
 	public int hp = 2;
 
 	// Use this for initialization
@@ -16,6 +17,7 @@ public class Enemy : MonoBehaviour {
 		playerController = FindObjectOfType<PlayerController>();
 		playerController2 = FindObjectOfType<PlayerController2>();
 		gameManager = FindObjectOfType<GameManager>();
+        skullKillFX = Resources.Load("SkullKill") as GameObject;
 	}
 	
 	// Update is called once per frame
@@ -50,6 +52,9 @@ public class Enemy : MonoBehaviour {
 			hp--;
 
 			if (hp <= 0) {
+				Vector3 thing = new Vector3(0, -3f, 0);
+                GameObject fx = Instantiate(skullKillFX, transform.position + thing, Quaternion.identity);
+                Destroy(fx, 1f);
 				Destroy(gameObject);
 			}
 		}
