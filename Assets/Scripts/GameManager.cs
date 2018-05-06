@@ -7,10 +7,14 @@ using UnityStandardAssets.CrossPlatformInput;
 public class GameManager : MonoBehaviour {
 
 	[SerializeField] float timeLeft = 60f;
+	[SerializeField] GameObject winnersCircle;
 	int player1Score = 0;
 	int player2Score = 0;
 
 	bool gameOver = false;
+	int winnerIndex = 0;
+	int winnerScale = 120;
+	Transform winnerTransform;
 	PlayerController playerController;
 	PlayerController2 playerController2;
 	PotionEmitter potionEmitter;
@@ -42,6 +46,16 @@ public class GameManager : MonoBehaviour {
 		if (timeLeft <= 0) {
 			setGameOverState();
 		}
+
+		if (gameOver) {
+			winnerTransform.position = Vector3.MoveTowards(winnerTransform.position, winnersCircle.transform.position, 50 * Time.deltaTime);
+			winnerTransform.Rotate(Vector3.up * Time.deltaTime * 90);
+			
+			if (winnerScale > 0) {
+				winnerScale--;
+				winnerTransform.localScale = winnerTransform.localScale += new Vector3(0.03f, 0.03f, 0.03f);
+			}
+		}
 	}
 
 	void setGameOverState() {
@@ -64,10 +78,12 @@ public class GameManager : MonoBehaviour {
 
 		if (player1Score > player2Score) {
 			print("player 1 won");
+			winnerIndex = 1;
+			winnerTransform = playerController.transform;
 		} else if (player2Score > player1Score) {
 			print("player 2 won");
-		} else {
-			print("no one won????");
+			winnerTransform = playerController2.transform;
+			winnerIndex = 2;
 		}
 	}
 
